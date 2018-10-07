@@ -65,7 +65,7 @@ class LeatherShoes(Finery):
         super().show()
 
 
-if __name__=="__main__":
+if __name__=="__main__": #层层包装
     xc=Person("小菜")
     print("第一种装扮:")
 
