@@ -1,10 +1,9 @@
 class Person:
+
+
     __name = ''
 
-    def __init__(self):
-        pass
-
-    def __init__(self, name):
+    def __init__(self, name=''):
         if (isinstance(name, str)):
             self.__name = name
 
@@ -20,7 +19,6 @@ class Finery(Person):
             self._component = component
 
     def show(self):
-        super().show()
         if (self._component != None):
             self._component.show()
 
@@ -79,3 +77,28 @@ if __name__=="__main__":
     kk.decorate(pqx)
     dtx.decorate(kk)
     dtx.show()
+
+    print("第二种装扮：")
+
+    px=LeatherShoes()
+    ld=Tie()
+    xz=Suit()
+
+    px.decorate(xc)
+    ld.decorate(px)
+    xz.decorate(ld)
+    xz.show()
+
+    print("第三种装扮：")
+
+    pqx2=Sneaker()
+    px2=LeatherShoes()
+    kk2=BigTrousers()
+    ld2=Tie()
+
+    pqx2.decorate(xc)
+    px2.decorate(pqx2)
+    kk2.decorate(px2)
+    ld2.decorate(kk2)
+
+    ld2.show()
